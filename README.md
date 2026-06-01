@@ -63,3 +63,18 @@ openshift-admin1-do180/
     ├── lab-2-networking.md
     ├── lab-3-storage.md
 ```
+Structure
+```
+PHYSICAL SERVER (RHEL 9.7)
+   ├── CPU: Intel Xeon (VT-x enabled)
+   ├── RAM: 660 GB
+   ├── KERNEL: KVM enabled (kvm + kvm_intel)
+   │
+   ├── libvirt (virsh management layer)
+   │
+   ├── QEMU/KVM virtual machines
+   │     ├── VM(s)
+   │     │     └── Docker inside VM
+   │     │           ├── go-backend (8080)
+   │     │           └── react-frontend
+```
