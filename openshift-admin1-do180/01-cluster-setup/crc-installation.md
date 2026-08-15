@@ -71,6 +71,9 @@ crc setup
 
 During setup, provide the downloaded Pull Secret when prompted.
 
+```
+https://console.redhat.com/openshift/install/pull-secret
+```
 ---
 
 # System Requirements
