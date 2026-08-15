@@ -3,7 +3,9 @@
 ## Step 1: Download CRC
 
 Download the latest Red Hat CodeReady Containers (CRC) package from the official Red Hat website.
-
+```
+https://console.redhat.com/openshift/create/local
+```
 Also download the Pull Secret required for OpenShift cluster setup.
 
 Required Files:
