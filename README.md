@@ -4,64 +4,128 @@ openshift-admin1-do180/
 │
 ├── README.md
 │
-├── 00-introduction/
+├── 00-foundations/
+│   ├── 01-linux-basics.md
+│   ├── 02-ip-addressing.md
+│   ├── 03-subnets-and-cidr.md
+│   ├── 04-routing-and-gateways.md
+│   ├── 05-dns.md
+│   ├── 06-tcp-udp-and-ports.md
+│   ├── 07-http-https.md
+│   ├── 08-firewalls.md
+│   ├── 09-load-balancers.md
+│   └── 10-network-troubleshooting.md
+│
+├── 01-containers/
+│   ├── what-is-a-container.md
+│   ├── images.md
+│   ├── registries.md
+│   ├── podman-basics.md
+│   ├── container-networking.md
+│   └── dockerfile.md
+│
+├── 02-kubernetes/
+│   ├── architecture.md
+│   ├── pods.md
+│   ├── deployments.md
+│   ├── namespaces.md
+│   ├── services.md
+│   ├── configmaps.md
+│   ├── secrets.md
+│   └── kubernetes-networking.md
+│
+├── 03-openshift/
 │   ├── what-is-openshift.md
 │   ├── kubernetes-vs-openshift.md
+│   ├── openshift-architecture.md
+│   ├── projects.md
+│   └── cluster-components.md
 │
-├── 01-cluster-setup/
+├── 04-cluster-setup/
 │   ├── crc-installation.md
 │   ├── crc-setup-steps.md
-│   ├── crc-troubleshooting.md
+│   ├── production-architecture.md
+│   └── crc-troubleshooting.md
 │
-├── 02-cli-basics/
+├── 05-cli-basics/
 │   ├── oc-login.md
 │   ├── oc-projects.md
 │   ├── oc-basic-commands.md
+│   └── oc-output-formats.md
 │
-├── 03-application-deployment/
+├── 06-application-deployment/
 │   ├── deploy-from-image.md
 │   ├── deploy-from-yaml.md
+│   ├── deployments.md
 │   ├── templates.md
+│   └── image-streams.md
 │
-├── 04-networking/
+├── 07-networking/
+│   ├── pod-networking.md
 │   ├── services.md
 │   ├── routes.md
 │   ├── ingress.md
+│   ├── network-policies.md
+│   └── troubleshooting.md
 │
-├── 05-storage/
+├── 08-storage/
+│   ├── volumes.md
 │   ├── pv-pvc.md
 │   ├── storage-classes.md
+│   └── dynamic-provisioning.md
 │
-├── 06-scaling-high-availability/
+├── 09-scaling-high-availability/
 │   ├── replicas.md
+│   ├── deployments.md
 │   ├── autoscaling.md
 │   ├── health-checks.md
+│   └── pod-disruption-budgets.md
 │
-├── 07-security-basics/
+├── 10-security/
 │   ├── users-roles.md
+│   ├── rbac.md
+│   ├── service-accounts.md
 │   ├── scc.md
+│   ├── secrets.md
+│   └── network-policies.md
 │
-├── 08-monitoring-troubleshooting/
+├── 11-monitoring-troubleshooting/
 │   ├── logs.md
 │   ├── debugging-pods.md
 │   ├── events.md
+│   ├── resource-usage.md
+│   └── troubleshooting-methodology.md
 │
-├── 09-best-practices/
-│   ├── performance.md
-│   ├── security-practices.md
+├── 12-production/
+│   ├── production-architecture.md
+│   ├── networking-design.md
+│   ├── dns-design.md
+│   ├── load-balancing.md
+│   ├── certificates.md
+│   ├── security-hardening.md
+│   ├── backup-and-recovery.md
+│   ├── monitoring.md
+│   └── disaster-recovery.md
+│
+├── labs/
+│   ├── 01-ip-networking.md
+│   ├── 02-dns.md
+│   ├── 03-containers.md
+│   ├── 04-first-openshift-app.md
+│   ├── 05-services-and-routes.md
+│   ├── 06-storage.md
+│   ├── 07-scaling.md
+│   ├── 08-security.md
+│   └── 09-troubleshooting.md
 │
 ├── scripts/
 │   ├── crc-setup.sh
-│   ├── oc-basic-setup.sh
+│   └── oc-basic-setup.sh
 │
-├── images/
-│   ├── openshift-architecture.png
-│   ├── pod-flow.png
-│
-└── labs/
-    ├── lab-1-deploy-app.md
-    ├── lab-2-networking.md
-    ├── lab-3-storage.md
+└── images/
+    ├── network-basics.png
+    ├── openshift-architecture.png
+    └── pod-flow.png
 ```
 Structure
 ```
